@@ -12,15 +12,37 @@
     <h1>Gavião Preto e Branco</h1>
 
     <div class="card" id="card">
-      <!-- SVG do gavião (estilizado) -->
-      <svg viewBox="0 0 200 200" class="hawk">
-        <path d="M100 20 L120 70 L160 80 L125 100 L140 150 L100 120 L60 150 L75 100 L40 80 L80 70 Z"
+      
+      <!-- SVG estilizado de um gavião -->
+      <svg viewBox="0 0 220 220" class="hawk">
+        <!-- asas -->
+        <path d="M110 90
+                 C70 60, 40 70, 20 90
+                 C50 95, 70 110, 90 120
+                 C70 140, 50 160, 30 180
+                 C70 170, 90 150, 110 130
+                 C130 150, 150 170, 190 180
+                 C170 160, 150 140, 130 120
+                 C150 110, 170 95, 200 90
+                 C180 70, 150 60, 110 90 Z"
               fill="black"/>
-        <circle cx="100" cy="85" r="6" fill="white"/>
+
+        <!-- corpo -->
+        <ellipse cx="110" cy="115" rx="18" ry="35" fill="black"/>
+
+        <!-- cabeça -->
+        <circle cx="110" cy="80" r="10" fill="black"/>
+
+        <!-- olho -->
+        <circle cx="113" cy="78" r="2" fill="white"/>
+
+        <!-- bico -->
+        <path d="M120 82 L135 88 L120 90 Z" fill="black"/>
       </svg>
+
     </div>
 
-    <button id="btn">Alternar efeito</button>
+    <button id="btn">Ativar efeito</button>
   </div>
 
   <script src="script.js"></script>
